@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import logo from '../../assets/images/logo.png'
-import {Parisienne, Yeseva_One, Gloria_Hallelujah} from "next/font/google"
+import {Parisienne, Yeseva_One, Gloria_Hallelujah, Abril_Fatface} from "next/font/google"
 
-const paris = Parisienne({
+const abril = Abril_Fatface({
     subsets: ["latin"],
     weight: "400",
     display: "auto",
@@ -24,7 +24,7 @@ export default function Header() {
         <div className="basis-5/6 flex items-center"> 
             <div className='text-6xl'>
 
-                <h1  className={paris.className}>Menu Maker AI</h1>
+                <h1  className={abril.className}>Menu Maker AI</h1>
             </div>
         </div>
     </nav>
