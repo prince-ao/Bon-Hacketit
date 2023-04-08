@@ -16,16 +16,6 @@ app.use(express.json());
 app.get("/", (_, res) => {
     res.send("Welcome to ChefAI API<br><br><br>the routes are: <br><br>POST /get-query")
 })
-// I'm expecting a grocery list
-
-/*
-{
-    "item_list": ["...", "...", ...]
-    "preferences": "...",
-    "allergies": "..."
-}
-*/
-
 
 app.post("/get-query", checkItemList, checkAllergies, checkPreferences, async (req, res) => {
     const body = req.body
