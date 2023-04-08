@@ -1,4 +1,21 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react"
+import {Libre_Baskerville, Gloria_Hallelujah} from "next/font/google"
+
+const libre = Libre_Baskerville({
+    subsets: ["latin"],
+    weight: "400",
+    display: "auto",
+    preload: true,
+    adjustFontFallback: false
+})
+
+const gloria = Gloria_Hallelujah({
+    subsets: ["latin"],
+    weight: "400",
+    display: "auto",
+    preload: true,
+    adjustFontFallback: false
+})
 
 export default function OrderedCountingInput(
     { count, text, setText, maxText }:
@@ -23,10 +40,12 @@ export default function OrderedCountingInput(
 
     return (
         <div className="flex flex-row justify-evenly">
-            <h3>{count + 1})</h3>
+            <div className="text-xl">
+                <h3 className={libre.className}>{count + 1})</h3>
+            </div>
             <div className="flex flex-row justify-evenly">
                 <div style={{ color: "black" }}>
-                    <input type="text" value={text} onChange={handleTextChange} />
+                    <input className={gloria.className} type="text" value={text} onChange={handleTextChange} />
                 </div>
                 <div><p>{counter}</p></div>
             </div>

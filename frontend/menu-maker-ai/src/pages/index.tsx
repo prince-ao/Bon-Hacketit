@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <main className="">
       <Header />
-      <div className="md:container md:mx-auto px-36">
-        <ListAdder name="Ingredients" arr={ingredients} setArr={setIngredients} maxText={MAX_TEXT}/>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="max-w-2xl mx-auto">
+          <ListAdder name="Ingredients" arr={ingredients} setArr={setIngredients} maxText={MAX_TEXT}/>
+        </div>
       </div>
     </main>
   )
