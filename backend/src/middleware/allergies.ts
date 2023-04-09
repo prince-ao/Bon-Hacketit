@@ -14,27 +14,29 @@ export async function checkAllergies(req: Request, res: Response, next: NextFunc
         });
         return;
     }
-    console.log(allergies)
-    if(allergies.includes("nothing")){
+    if(allergies.length == 0){
+        req.body.allergies = "nothing"
         next();
         return;
     }
+    allergies = allergies.join(", ")
     const openai = new OpenAIApi(configuration);
     setTimeout(async () => {
         const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [
             {role: "system", content: "You are a helpful assistant. You will obey my commands precisely."},
-            {role: "user", content: `Answer me with only a single "yes" or "no"(no double quotes). Is this message talk only about allergies: "${allergies}"`}
+            {role: "user", content: `Answer me with only a single "yes" or "no"(no double quotes). Is this message talk only about allergies: "I'm allergic to ${allergies}"`}
         ],
         temperature: 0,
         });
-        console.log(response.data.choices)
+        //console.log(response.data.choices)
         const lowerCaseStr = response.data.choices[0].message?.content.toLowerCase();
         if(lowerCaseStr?.includes("no")){
             res.status(401).send("expected message about allergies")
             return;
         }
+        req.body.allergies = allergies
         next();
     }, 5000);
 }

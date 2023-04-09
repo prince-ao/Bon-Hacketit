@@ -1,5 +1,5 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react"
-import {Libre_Baskerville, Dosis} from "next/font/google"
+import {Libre_Baskerville, Comfortaa} from "next/font/google"
 
 const libre = Libre_Baskerville({
     subsets: ["latin"],
@@ -9,11 +9,11 @@ const libre = Libre_Baskerville({
     adjustFontFallback: false
 })
 
-const dosis = Dosis({
+const dosis = Comfortaa({
     subsets: ["latin"],
     weight: "400",
     display: "auto",
-    preload: true,
+    preload: false,
     adjustFontFallback: false
 })
 
@@ -47,7 +47,7 @@ export default function OrderedCountingInput(
             </div>
             <div className="flex flex-row justify-evenly">
                 <div style={{ color: "black" }} className="">
-                    <input style={{height: "40px", outline: "none", borderRadius: "3px 0 0 3px", fontSize: "20px"}}className={dosis.className} type="text" value={tempText} onChange={handleTextChange} />
+                    <input style={{height: "40px", outline: "none", borderRadius: "3px 0 0 3px", fontSize: "20px", paddingLeft: "5px"}}className={dosis.className} type="text" value={tempText} onChange={handleTextChange} />
                 </div>
                 <div style={{borderRadius: "0 3px 3px 0"}} className="bg-zinc-50 px-4 flex items-center"><p className="text-black">{counter}</p></div>
             </div>

@@ -23,7 +23,6 @@ export default function Header() {
         </div>
         <div className="basis-5/6 flex items-center"> 
             <div className='text-6xl'>
-
                 <h1  className={abril.className}>Menu Maker AI</h1>
             </div>
         </div>

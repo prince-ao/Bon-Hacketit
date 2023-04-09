@@ -20,6 +20,7 @@ export default function ListAdder(
         let newArr = arr;
         newArr[index] = change
         setArr(newArr)
+        console.log("being called")
     }
     
     return (
