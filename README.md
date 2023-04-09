@@ -36,11 +36,17 @@ Start by cloning the repository
 Download Next.js https://nextjs.org/docs
 
 ### Step 3
-Set up a directory by opening the terminal and typing npx create-next-app@latest
+Set up a directory by opening the terminal and typing `npx create-next-app@latest` name your directory `filename`
 
 ### Step 4
+Type `cd filename` into your terminal to enter your directory. Type `pnpm install` into the terminal
+
+### Step 5
+Type `sudo npm install -g pnpm` into the terminal
+
+### Step 6
 After the installation is complete and you have your directory and cloned repository, type 
-npm run dev into the terminal and copy the link http://localhost:3000 into your browser
+`npm run dev` into the terminal and copy the link http://localhost:3000 into your browser
 
 ## Usage:
 
