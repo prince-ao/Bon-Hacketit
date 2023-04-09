@@ -33,7 +33,7 @@ meeting your nutritional needs.
 Start by cloning the repository
 
 ### Step 2
-Download Next.js [here:](https://nextjs.org/docs)
+Download Next.js [here](https://nextjs.org/docs)
 
 ### Step 3
 Set up a directory by opening the terminal and typing `npx create-next-app@latest` name your directory `filename`
@@ -55,14 +55,14 @@ TO BE UPDATED AFTER USE
 ## Credits:
 
 ### Contributers
-Prince Addo- https://github.com/prince-ao
+[Prince Addo](https://github.com/prince-ao)
 
-Brendan Costello- https://github.com/BrendanCostello
+[Brendan Costello](https://github.com/BrendanCostello)
 
 ### Resources Used
-Next.js 13 Crash Course by developedbyed (https://www.youtube.com/watch?v=T63nY70eZF0)
+[Next.js 13 Crash Course by developedbyed](https://www.youtube.com/watch?v=T63nY70eZF0)
 
-Professional README.md Guide (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+[Professional README.md Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
 ##License:
 GPL
