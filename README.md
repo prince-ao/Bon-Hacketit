@@ -53,6 +53,7 @@ Brendan Costello- Some stuff
 
 ### Resources Used
 Next.js 13 Crash Course by developedbyed (https://www.youtube.com/watch?v=T63nY70eZF0)
+
 Professional README.md Guide (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
 ##License:
