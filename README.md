@@ -1,4 +1,4 @@
-![Chef](https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png))
+![Chef](https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png)
 
 # Menu Maker AI
 
