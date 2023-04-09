@@ -1,4 +1,4 @@
-<img src="https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png" width="120" height="200">
+<img src="https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png" width="120" height="200" margin-left="auto" margin-right="auto">
 
 <center><h1>Menu Maker AI</h1></center>
 
