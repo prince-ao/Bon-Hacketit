@@ -47,9 +47,9 @@ TO BE UPDATED AFTER USE
 ## Credits:
 
 ### Contributers
-Prince Addo- Basically everything
+Prince Addo- https://github.com/prince-ao
 
-Brendan Costello- Some stuff
+Brendan Costello- https://github.com/BrendanCostello
 
 ### Resources Used
 Next.js 13 Crash Course by developedbyed (https://www.youtube.com/watch?v=T63nY70eZF0)
