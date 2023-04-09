@@ -1,6 +1,6 @@
 # Menu Maker AI
 
-### The Menu Maker AI uses machine learning to better anticipate what kind of recipes you might enjoy making based on the ingredients you have in your possession.
+The Menu Maker AI uses machine learning to better anticipate what kind of recipes you might enjoy making based on the ingredients you have in your possession.
 
 # Table of Contents
 
