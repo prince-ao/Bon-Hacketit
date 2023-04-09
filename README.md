@@ -33,7 +33,7 @@ meeting your nutritional needs.
 Start by cloning the repository
 
 ### Step 2
-Download Next.js here: https://nextjs.org/docs
+Download Next.js [here:](https://nextjs.org/docs)
 
 ### Step 3
 Set up a directory by opening the terminal and typing `npx create-next-app@latest` name your directory `filename`
