@@ -1,6 +1,6 @@
-![Chef](https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png)
+<div align=center><img src="https://github.com/prince-ao/Bon-Hacketit/blob/main/frontend/menu-maker-ai/src/assets/images/logo.png" width="120" height="200"></div>
 
-# Menu Maker AI
+<h1 align=center>Menu Maker AI</h1>
 
 The Menu Maker AI uses machine learning to better anticipate what kind of recipes you might enjoy making based on the ingredients you have in your possession.
 
