@@ -4,6 +4,7 @@ import ListAdder from "./components/list-adder"
 import { Comfortaa } from "next/font/google"
 import axios, { AxiosError } from 'axios'
 import Image from 'next/image'
+import Head from 'next/head'
 import robot from '../assets/images/robot.gif'
 
 const comf = Comfortaa({
@@ -28,6 +29,7 @@ export default function Home() {
   const [error, setError] = useState("")
   const [typedText, setTypedText] = useState('');
   const [btnIsDisabled, setBtnIsDisabled] = useState(false)
+  const [username, setUsername] = useState("")
 
   // Assumption: The user is in general good.
   // useEffect(() => {
@@ -78,9 +80,19 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, [res])
 
+  useEffect(() => {
+    const user = localStorage.getItem("user")
+    if(user != null){
+      setUsername(user)
+    }
+  }, [])
+
   return (
     <main className="">
-      <Header />
+      <Head>
+        <title>Menu Maker AI</title>
+      </Head>
+      <Header wlogin={username == ""} welcome={username}/>
       { error != "" ? 
         <>
           <p style={{color: "red"}}>{error}</p>
